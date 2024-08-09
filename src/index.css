@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background: #41e2ba;
+  transition: background-color 300ms ease-in-out;
+  line-height: 1.5;
+}
+
+.container{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.working{
+  background: #ef5d50;
+}
+
+.hidden{
+  display: none;
+}
+
+.pomodoro{
+  background: #fff;
+  margin: 50px 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.pomodoro h2{
+  font-size: 24px;
+  text-align: center;
+}
+
+.pomodoro .timer{
+  font-size: 6rem;
+  text-align: center;
+}
+
+.working .pomodoro button{
+  background: #ef5d50;
+  color: #fff; 
+}
+.pomodoro button{
+  background: #41e2ba;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #000;
+  transition: background-color 300ms ease-in-out;
+  margin: 20px auto; 
+}
+
+.pomodoro .controls{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pomodoro .details{
+  margin: 20px 0;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay .modal_content{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.overlay button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.styled_input{
+  width: 100px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  &::placeholder {
+    color: #ccc;
+  }
+}
+
+.main_container_modal{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.main_container_modal .conclude_button{
+  position: relative;
+  bottom: 0;
+  border: none;
+  width: 100px;
+  margin: 0 auto;
+  background:#41e2ba;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+}
